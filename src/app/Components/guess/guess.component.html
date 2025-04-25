@@ -1,0 +1,56 @@
+@if(!isOver) {
+<h2>{{ currentFrameIndex + 1 }}. kare</h2>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="frame">
+    <img [src]="imageSrc" alt="" />
+  </div>
+
+  <div class="container">
+    <div class="selectOptions">
+      <select name="season" class="selectedOption" [(ngModel)]="season">
+        <option *ngFor="let num of [1, 2]" [ngValue]="num">
+          {{ num }}
+        </option>
+      </select>
+
+      <select name="episode" class="selectedOption" [(ngModel)]="episode">
+        <option *ngFor="let num of [1, 2, 3, 4, 5, 6, 7, 8, 9]" [ngValue]="num">
+          {{ num }}
+        </option>
+      </select>
+    </div>
+
+    <p class="timer">{{ countdown }}</p>
+
+    <div class="button">
+      <button type="submit">Onayla</button>
+      <p>{{ numOfTrue }} / 10</p>
+    </div>
+  </div>
+</form>
+
+} @else if(!mainMenu) {
+<div class="endScreen">
+  <p>Toplamda {{ numOfTrue }} tanesini doğru bilebildin.</p>
+
+  <button (click)="restart()">Yeniden başla</button>
+  <button (click)="returnToMainMenu()">Ana menüye dön</button>
+</div>
+
+<div class="resultFrames">
+  @for (frame of frames; track frame; let i = $index) {
+  <div class="resultFrame">
+    <img [src]="frame.imageSrc" alt="frame" />
+    @if (isCorrectFrame[i]) {
+    <p>✅</p>
+    } @else {
+    <p>❌</p>
+    }
+  </div>
+  }
+</div>
+
+} @else {
+<app-root></app-root>
+}

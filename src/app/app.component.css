@@ -1,0 +1,42 @@
+.start {
+  height: 100vh; /* Full viewport height to avoid bottom cutoff */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.start h1 {
+  font-size: 65px;
+  margin: 0px;
+  color: rgb(39, 207, 225);
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* subtle text shadow */
+}
+
+.start img {
+  height: 450px;
+  margin: 30px;
+  border-radius: 20px; /* softer rounded corners */
+  object-fit: cover;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* nice deep shadow */
+}
+
+.start button {
+  height: 70px;
+  width: 250px;
+  border: none;
+  border-radius: 35px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #3a88db, #52c7e0); /* prettier button */
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.start button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
