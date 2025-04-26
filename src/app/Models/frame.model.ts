@@ -27,7 +27,7 @@ function generateFrames(): Frame[] {
       // Inner loop for going through frames for each episodes
       for (let frameNum = 1; frameNum < numOfFrame; frameNum++) {
         frames.push({
-          imageSrc: `S${season}/E${episode}/${frameNum}.png`,
+          imageSrc: `S${season}/E${episode}/${frameNum}.jpg`,
           season,
           episode,
         });

@@ -12,6 +12,6 @@ export default `<!DOCTYPE html>
   <style>html,body{height:100%;margin:0;padding:0;background:linear-gradient(135deg,#e18585,#eae444);background-attachment:fixed}</style><link rel="stylesheet" href="styles-3DJK6GGA.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-3DJK6GGA.css"></noscript></head>
   <body ngcm="">
     <app-root></app-root>
-  <script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-BGVJEMUE.js" type="module"></script></body>
+  <script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-EU2NMPCL.js" type="module"></script></body>
 </html>
 `;
